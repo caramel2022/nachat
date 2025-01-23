@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الوحدة الثالثة - خصائص الكائنات الحية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --background-color: #f4f6f7;
+            --accent-color: #2ecc71;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: var(--background-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            direction: rtl;
+            padding: 2rem;
+        }
+
+        .page-header {
+            width: 100%;
+            max-width: 1200px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .page-header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .topic-section {
+            width: 100%;
+            max-width: 1200px;
+            margin-bottom: 2rem;
+        }
+
+        .topic-header {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px 10px 0 0;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .lessons-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            background-color: white;
+            border-radius: 0 0 15px 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .lesson-card {
+            background-color: #f9f9f9;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            height: 300px;
+        }
+
+        .lesson-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .lesson-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+
+        .lesson-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .lesson-description {
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .navigation-btns {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 1rem;
+        }
+
+        .nav-btn {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 10px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-btn i {
+            margin-left: 10px;
+        }
+
+        .nav-btn:hover {
+            background-color: var(--primary-color);
+        }
+
+        @media (max-width: 1024px) {
+            .lessons-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .lessons-container {
+                grid-template-columns: 1fr;
+            }
+            .navigation-btns {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav-btn {
+                margin-bottom: 1rem;
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-header">
+        <h1>الوحدة الثالثة - خصائص الكائنات الحية</h1>
+        <p>استكشاف تنوع وخصائص الكائنات الحية</p>
+    </div>
+
+    <div class="topic-section">
+        <div class="topic-header">
+            <h2>الموضوع الأول: خصائص الكائنات الحية</h2>
+        </div>
+        <div class="lessons-container">
+            <div class="lesson-card">
+                <div class="lesson-icon">🌱</div>
+                <h3 class="lesson-title">كائنات حية وأجسام غير حية</h3>
+                <p class="lesson-description">التمييز بين الكائنات الحية والأجسام غير الحية</p>
+            </div>
+            <div class="lesson-card">
+                <div class="lesson-icon">🔬</div>
+                <h3 class="lesson-title">خصائص مشتركة للكائنات الحية</h3>
+                <p class="lesson-description">دراسة الخصائص المشتركة للمجموعات الرئيسية من الكائنات الحية</p>
+            </div>
+            <div class="lesson-card">
+                <div class="lesson-icon">🐘</div>
+                <h3 class="lesson-title">حيوانات فقرية ولا فقرية</h3>
+                <p class="lesson-description">التعرف على التصنيفات الأساسية للحيوانات</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="topic-section">
+        <div class="topic-header">
+            <h2>الموضوع الثاني: خصائص الحيوانات وتفاعلها مع البيئة</h2>
+        </div>
+        <div class="lessons-container">
+            <div class="lesson-card">
+                <div class="lesson-icon">🌿</div>
+                <h3 class="lesson-title">خصائص مشتركة لحيوانات عاشبة</h3>
+                <p class="lesson-description">دراسة الخصائص المميزة للحيوانات العاشبة</p>
+            </div>
+            <div class="lesson-card">
+                <div class="lesson-icon">🦁</div>
+                <h3 class="lesson-title">خصائص مشتركة لحيوانات لاحمة</h3>
+                <p class="lesson-description">التعرف على الصفات المشتركة للحيوانات اللاحمة</p>
+            </div>
+            <div class="lesson-card">
+                <div class="lesson-icon">❤️</div>
+                <h3 class="lesson-title">وظائف أعضاء أساسية للحيوانات</h3>
+                <p class="lesson-description">فهم الوظائف الحيوية للأعضاء الرئيسية</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="topic-section">
+        <div class="topic-header">
+            <h2>الموضوع الثالث: خصائص النباتات وتفاعلها مع البيئة</h2>
+        </div>
+        <div class="lessons-container">
+            <div class="lesson-card">
+                <div class="lesson-icon">🌳</div>
+                <h3 class="lesson-title">خاصيات النباتات</h3>
+                <p class="lesson-description">دراسة الخصائص الفريدة للنباتات</p>
+            </div>
+            <div class="lesson-card">
+                <div class="lesson-icon">🛠️</div>
+                <h3 class="lesson-title">إنجاز مشروع تكنولوجي</h3>
+                <p class="lesson-description">تصميم وتنفيذ مشروع تكنولوجي مرتبط بعالم النبات</p>
+            </div>
+            <div class="lesson-card">
+                <div class="lesson-icon">📊</div>
+                <h3 class="lesson-title">أنشطة التقويم والدعم</h3>
+                <p class="lesson-description">تقييم المعارف وتعزيز الفهم من خلال أنشطة متنوعة</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation-btns">
+        <a href="units.html" class="nav-btn">
+            <i class="fas fa-arrow-right"></i>
+            العودة للوحدات
+        </a>
+        <a href="manhal.html" class="nav-btn">
+            <i class="fas fa-home"></i>
+            الصفحة الرئيسية
+        </a>
+    </div>
+</body>
+</html>

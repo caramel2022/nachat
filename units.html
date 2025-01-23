@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الوحدات الدراسية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --background-color: #f4f6f7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: var(--background-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            direction: rtl;
+            padding: 2rem;
+        }
+
+        .units-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        .unit-card {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            height: 400px;
+        }
+
+        .unit-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+
+        .unit-icon {
+            font-size: 6rem;
+            margin-bottom: 1rem;
+        }
+
+        .unit-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .unit-description {
+            font-size: 1rem;
+            color: #666;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .home-btn {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 10px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+
+        .home-btn i {
+            margin-left: 10px;
+        }
+
+        .home-btn:hover {
+            background-color: var(--primary-color);
+        }
+
+        @media (max-width: 1024px) {
+            .units-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .units-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="units-container">
+        <div class="unit-card" onclick="window.location.href='unit1_lessons.html'">
+            <div class="unit-icon">🫁</div>
+            <h2 class="unit-title">الوحدة 1: تنفس الإنسان</h2>
+            <p class="unit-description">دراسة عملية التنفس عند الإنسان، وآلية تبادل الأكسجين وثاني أكسيد الكربون في الرئتين</p>
+        </div>
+        <div class="unit-card" onclick="window.location.href='unit2_lessons.html'">
+            <div class="unit-icon">🧊</div>
+            <h2 class="unit-title">الوحدة 2: خصائص المادة</h2>
+            <p class="unit-description">استكشاف الخصائص الفيزيائية والكيميائية للمواد المختلفة وحالاتها المتعددة</p>
+        </div>
+        <div class="unit-card" onclick="window.location.href='unit3_lessons.html'">
+            <div class="unit-icon">🌱</div>
+            <h2 class="unit-title">الوحدة 3: خصائص الكائنات الحية</h2>
+            <p class="unit-description">التعرف على الخصائص الأساسية للكائنات الحية وعناصر الحياة المميزة</p>
+        </div>
+        <div class="unit-card" onclick="window.location.href='unit4_lessons.html'">
+            <div class="unit-icon">🔥</div>
+            <h2 class="unit-title">الوحدة 4: الحرارة</h2>
+            <p class="unit-description">دراسة مفهوم الحرارة وانتقالها وتأثيرها على المواد والأجسام المختلفة</p>
+        </div>
+        <div class="unit-card" onclick="window.location.href='unit5_lessons.html'">
+            <div class="unit-icon">🐞</div>
+            <h2 class="unit-title">الوحدة 5: دورة حياة الحيوانات</h2>
+            <p class="unit-description">استكشاف مراحل النمو والتطور في دورة حياة مختلف أنواع الحيوانات</p>
+        </div>
+        <div class="unit-card" onclick="window.location.href='unit6_lessons.html'">
+            <div class="unit-icon">🌍</div>
+            <h2 class="unit-title">الوحدة 6: خصائص الأرض وتغيراتها</h2>
+            <p class="unit-description">دراسة التركيب الجيولوجي للأرض والتغيرات المستمرة التي تطرأ عليها</p>
+        </div>
+    </div>
+
+    <a href="manhal.html" class="home-btn">
+        <i class="fas fa-home"></i>
+        العودة للصفحة الرئيسية
+    </a>
+</body>
+</html>
